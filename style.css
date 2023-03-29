@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "TTLakes Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: local("TTLakes Medium"),
+         local("TTLakes-Medium"),  
+         url("fonts/TTLakes-Medium.woff") format("woff"),
+         url("fonts/TTLakes-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "TTLakes Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("TTLakes Bold"),
+         local("TTLakes-Bold"),  
+         url("fonts/TTLakes-Bold.woff") format("woff"),
+         url("fonts/TTLakes-Bold.ttf") format("ttf");
+}
+
+
+* {
+    margin: 0;
+    padding:0;
+    font-family: "TTLakes Medium", sans-serif;
+
+}
+
+body {
+    margin: 0;
+    background: #F2F2F2;
+}
+
+.burger {
+    max-width: 320px;
+    background: #FFFFFF;
+    box-shadow: 16px 0px 52px 0px #0E185033, 
+                 -2px 0px 4px 0px #454F7E05;
+
+}
+
+.header-burger__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px 46px 24px;
+}
+
+.header-burger__menu {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: white;
+    border:none;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.btn-X {
+    margin-right: 16px;
+}
+.main-burger {
+    padding-left: 24px;
+}
+
+.main-burger__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-burger .active {
+    color: rgba(126, 126, 130, 1);
+}
+
+.main-burger__link {
+    position: relative; 
+    padding-bottom: 32px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.main-burger__nav a:hover {
+color:rgba(126, 126, 130, 1);
+transform: scale(1.1) translateX(15px);
+transition: 0.4s;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -5px;
+    background: #41F6D7;
+    border-radius:40%;
+    width: 4px;
+    height: 32px;
+}
+
+.footer-burger {
+    padding: 268px 0 32px 24px;
+}
+
+.footer-burger__nav {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.footer-burger .phone-number {
+    font-family: "TTLakes Bold";
+    font-size: 24px;
+    padding: 12px 0 40px 0;
+    color: #1B1C21;
+}
+
+.footer-burger pre {
+    display:block;
+    padding-top: 20px;
+    color: #1B1C21;
+    font-size: 16px;
+}
+
+.footer-burger__btn {
+    margin-right: 16px;
+}
+
+.footer-burger__changelang{
+    display: flex;
+
+}
+
+.footer-burger__changelang button{
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding:0 8px 0 0;
+    margin-top: 40px;
+}
+
+.footer-burger__changelang button:first-child{
+    color:#7E7E82;
+}
+
